@@ -1,0 +1,27 @@
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 100px;
+	height: 80px;
+
+	-webkit-box-shadow: 3px 3px 11px 0px #0000001a;
+	-moz-box-shadow: 3px 3px 11px 0px #0000001a;
+	box-shadow: 3px 3px 11px 0px #0000001a;
+}
+
+.navBar ul {
+	display: flex;
+	gap: 30px;
+}
+
+.navBar ul li a {
+	text-decoration: none;
+	color: var(--blue-00);
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.logoNavBar {
+	height: 60px;
+}

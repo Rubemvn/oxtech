@@ -1,0 +1,39 @@
+:root {
+	--white-00: #ffffff;
+	--blue-00: #004662;
+	--blue-01: #0a7da5;
+	--blue-02: #0a71a5;
+	--blue-03: #54abdb;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+	list-style: none;
+	border: 0;
+}
+
+html {
+	/* a cada 1rem será considerado 10px */
+	font-size: 62.5%;
+}
+
+html,
+body {
+	font-family: "Montserrat";
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.content {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.buttonContact01 {
+}
