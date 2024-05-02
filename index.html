@@ -7,6 +7,23 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<!-- Links ↓ -->
+
+		<!-- Favicon ↓ -->
+		<link
+			rel="shortcut icon"
+			href="/assets/images/icons/oxtech favicon.svg"
+			type="image/x-icon" />
+		<!-- Fonts ↓ -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
 		<!-- Título da Barra de navegação -->
 		<title>OXTECH | Lorem Ipsum</title>
 	</head>
@@ -14,36 +31,40 @@
 		<!-- div que agrupa o conteúdo da página -->
 		<div class="content">
 			<!-- Barra de navegação -->
-			<nav class="navBar">
-				<!-- Logo OXTECH com botão direcionando para "/" -->
-				<a href="/">
-					<img
-						src=""
-						alt="Logo da OXTECH"
-				/></a>
-				<!-- Menu da página com todas botões direcionando para cada seção -->
-				<ul>
-					<li>
-						<a href="#home"> HOME </a>
-					</li>
-					<li>
-						<a href="#aboutUs"> SOBRE </a>
-					</li>
-					<li>
-						<a href="#clients"> CLIENTES </a>
-					</li>
-					<li>
-						<!-- Botão contate-nos -->
-						<a
-							href="#contact"
-							class="buttonContact01">
-							CONTATE-NOS</a
-						>
-					</li>
-				</ul>
-			</nav>
+			<header>
+				<nav class="navBar">
+					<!-- Logo OXTECH com botão direcionando para "/" -->
+					<a href="/">
+						<img
+							src=""
+							alt="Logo da OXTECH"
+					/></a>
+					<!-- Menu da página com todas botões direcionando para cada seção -->
+					<ul>
+						<li>
+							<a href="#home"> HOME </a>
+						</li>
+						<li>
+							<a href="#aboutUs"> SOBRE </a>
+						</li>
+						<li>
+							<a href="#clients"> CLIENTES </a>
+						</li>
+						<li>
+							<!-- Botão contate-nos -->
+							<a
+								href="#contact"
+								class="buttonContact01">
+								CONTATE-NOS</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</header>
 			<!-- Nessa tag está agrupado todo conteúdo da página -->
 			<main>
+				<!--  -->
+				<!--  -->
 				<!-- Primeira seção - Home -->
 				<section id="home">
 					<!-- Agrupando todo o conteúdo da Home -->
@@ -106,6 +127,8 @@
 						<button class="arrow">Descer</button>
 					</div>
 				</section>
+				<!--  -->
+				<!--  -->
 				<!-- Segunda seção - About Us -->
 				<section id="aboutUs">
 					<!-- Container com atividades que fazemos -->
@@ -175,31 +198,37 @@
 						</a>
 					</div>
 				</section>
-				<!-- Terceira seção -  -->
+				<!--  -->
+				<!--  -->
+				<!-- Terceira seção - Clientes -->
 				<section id="clients">
 					<div class="ourClients">
 						<!-- Title -->
 						<h2>Alguns de nossos Clientes</h2>
 						<div class="clientsLogos">
 							<!-- Logos de clientes -->
+							<!-- Cliente 1 -->
 							<div class="client">
 								<img
 									src=""
 									alt="Logo cliente 1" />
 								<p>Cliente 1</p>
 							</div>
+							<!-- Cliente 2 -->
 							<div class="client">
 								<img
 									src=""
 									alt="Logo cliente 2" />
 								<p>Cliente 1</p>
 							</div>
+							<!-- Cliente 3 -->
 							<div class="client">
 								<img
 									src=""
 									alt="Logo cliente 3" />
 								<p>Cliente 1</p>
 							</div>
+							<!-- Cliente 4 -->
 							<div class="client">
 								<img
 									src=""
@@ -286,9 +315,133 @@
 						</div>
 					</div>
 				</section>
-				<section id="contact"></section>
+				<!--  -->
+				<!--  -->
+				<!-- Quarta seção - Contato -->
+				<section id="contact">
+					<!-- Container com itens do formulário -->
+					<div class="form">
+						<!-- Título do formulário -->
+						<h2 class="titleForm">ENTRE EM CONTATO</h2>
+						<!-- Form -->
+						<form action="">
+							<!-- Label que agrupa o titulo do input e o input -->
+							<label for="">
+								Nome e Sobrenome *
+								<input
+									type="text"
+									required />
+							</label>
+							<!-- Label que agrupa o titulo do input e o input -->
+							<label for="">
+								Email *
+								<input
+									type="email"
+									required />
+							</label>
+							<!-- Div que agrupa inputs de telefone e motivo do contato -->
+							<div class="phoneAndReason">
+								<!-- Label que agrupa o titulo do input e o input -->
+								<label for="">
+									Telefone *
+									<input type="tel" />
+								</label>
+								<!-- Label que agrupa o titulo do select e o select -->
+								<label for="">
+									Motivo do Contato *
+									<select
+										name=""
+										id="">
+										<!-- Opções do Select -->
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select>
+								</label>
+							</div>
+							<!-- Botão que envia dados do formulário -->
+							<button>Enviar</button>
+						</form>
+					</div>
+				</section>
 			</main>
-			<footer></footer>
+			<!--  -->
+			<!--  -->
+			<!-- Footer da página -->
+			<footer>
+				<!-- Container com seções do footer -->
+				<div class="contentFooter">
+					<!-- Seção 1 com Logo e botão de contate-nos -->
+					<div class="contentLeft">
+						<img
+							src=""
+							alt="Logo da OXTECH" />
+						<a href="#contact">CONTATE-NOS</a>
+					</div>
+					<!-- Seção 2 com Lista de seções da página -->
+					<div class="contentCenter">
+						<ul class="listSections">
+							<li>
+								<a href="#home">Home</a>
+							</li>
+							<li>
+								<a href="#aboutUs">Sobre nós</a>
+							</li>
+							<li>
+								<a href="#clients">Clientes</a>
+							</li>
+							<li>
+								<a href="#segments">Segmentos</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Seção 3 com dados para contato da Empresa -->
+					<div class="contentRight">
+						<!-- Link para whatsapp ou telefone da empresa -->
+						<a href="/">(00)00000-0000</a>
+						<!-- Link para o email da empresa -->
+						<a href="mailto:email@gmail.com">email@gmail.com</a>
+						<!-- Link para o instagram da empresa -->
+						<a
+							href="https://www.instagram.com/oxtech"
+							target="_blank"
+							>@oxtech
+							<img
+								src=""
+								alt="logo monocromática do instagram"
+						/></a>
+						<!-- Link para o facebook da empresa -->
+						<a
+							href="https://www.facebook.com/oxtech"
+							target="_blank"
+							>Oxtech Consultoria
+							<img
+								src=""
+								alt="logo monocromática do facebook"
+						/></a>
+						<!-- Link para o linkedin da empresa -->
+						<a
+							href="https://www.linkedin.com/oxtech"
+							target="_blank"
+							>Oxtech Consultoria
+							<img
+								src=""
+								alt="logo monocromática do linkedin"
+						/></a>
+					</div>
+				</div>
+				<!-- Container com indicação de desenvolvimento -->
+				<div class="developed">
+					<p>
+						Desenvolvido por<a
+							href="https://rubemvn.github.io/"
+							target="_blank"
+							>Rúbem Vieira</a
+						>
+					</p>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
