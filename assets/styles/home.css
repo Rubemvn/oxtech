@@ -1,0 +1,73 @@
+#home {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background-color: white;
+	/* padding-top: 80px; */
+	background-image: url("/assets/images/bg/BG-1\ 1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-clip: padding-box;
+	background-position: center;
+	/* background: fixed url("/assets/images/bg/BG-1\ 1.png"); */
+}
+
+.homeContainer {
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	align-content: space-between;
+	height: 65%;
+}
+
+.title h1 {
+	font-size: 5.8rem;
+	color: var(--white-00);
+}
+
+.companyName {
+	display: none;
+}
+
+.title img {
+	width: 38.5rem;
+}
+
+.welcome {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.welcome p {
+	color: var(--white-00);
+	font-size: 2rem;
+	font-weight: 500;
+	width: 50rem;
+}
+
+.invitation {
+	display: flex;
+	text-align: right;
+	justify-content: right;
+	flex-direction: column;
+	width: 65rem;
+
+	gap: 2rem;
+
+	filter: drop-shadow(0px 4px 10px #0000004d);
+}
+
+.invitation h2 {
+	font-size: 3.2rem;
+	color: var(--white-00);
+}
+
+.arrow {
+	background-color: #ffffff00;
+	margin-bottom: 2.4rem;
+	padding: 0.2rem;
+	cursor: pointer;
+}

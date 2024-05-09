@@ -1,5 +1,6 @@
 :root {
 	--white-00: #ffffff;
+	--black-00: #000;
 	--blue-00: #004662;
 	--blue-01: #0a7da5;
 	--blue-02: #0a71a5;
@@ -33,7 +34,4 @@ body {
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-}
-
-.buttonContact01 {
 }
