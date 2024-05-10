@@ -42,6 +42,14 @@
 		<link
 			rel="stylesheet"
 			href="/assets/styles/home.css" />
+		<!-- AboutUs -->
+		<link
+			rel="stylesheet"
+			href="/assets/styles/aboutUs.css" />
+		<!-- Clients -->
+		<link
+			rel="stylesheet"
+			href="/assets/styles/clients.css" />
 		<!--  -->
 		<!--  -->
 
@@ -75,11 +83,9 @@
 						</li>
 						<li>
 							<!-- Botão contate-nos -->
-							<button
-								href="#contact"
-								class="buttonContact01">
-								CONTATE-NOS
-							</button>
+							<a href="#contact">
+								<button class="buttonContact01">CONTATE-NOS</button>
+							</a>
 						</li>
 					</ul>
 				</nav>
@@ -103,14 +109,15 @@
 									alt="Imagem com nome da OXTECH" />
 							</div>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s,
+								Descubra a expertise em consultoria e desenvolvimento para o
+								sistema ERP TOTVS Protheus. Com 21 anos de experiência,
+								garantimos excelência e agilidade para impulsionar seu negócio.
+								Venha fazer parte da nossa história de sucesso!
 							</p>
 						</div>
 						<!-- Container de convite, redes sociais e botão contate-nos -->
 						<div class="invitation">
-							<h2>LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRITING</h2>
+							<h2>INOVAÇÃO E EFICIÊNCIA PARA IMPULSIONAR SUA PRODUTIVIDADE.</h2>
 							<div class="contactsHome">
 								<!-- logos das redes sociais -->
 								<!-- <div class="socialMedia">
@@ -139,7 +146,7 @@
 								<!-- Botão fale conosco -->
 								<button
 									href="#contact"
-									class="buttonContact01">
+									class="buttonContact01 scale-1-1">
 									Fale conosco
 								</button>
 							</div>
@@ -147,11 +154,13 @@
 					</div>
 					<!-- Botão que leva para a outra seção -->
 					<div>
-						<button class="arrow">
-							<img
-								src="/assets/images/icons/arrow.svg"
-								alt="seta para baixo" />
-						</button>
+						<a href="#aboutUs">
+							<button class="arrow">
+								<img
+									src="/assets/images/icons/arrow.svg"
+									alt="seta para baixo" />
+							</button>
+						</a>
 					</div>
 				</section>
 				<!--  -->
@@ -160,48 +169,63 @@
 				<section id="aboutUs">
 					<!-- Container com atividades que fazemos -->
 					<div class="activitys">
-						<!-- Titulo -->
-						<h2>Oque Fazemos?</h2>
 						<!-- Cards com atividades e detalhes do sistemas-->
 						<div class="activityCards">
+							<!-- Titulo -->
+							<h2>OQUE FAZEMOS?</h2>
 							<!-- Card 1 -->
 							<div class="activityCard">
 								<div class="titleActivityCard">
-									<h4>Sistemas Versáteis</h4>
+									<h4>TOTVS PROTHEUS</h4>
 									<img
-										src=""
+										src="./assets/images/icons/gerenciamento.png"
 										alt="icone de Sistemas versátil" />
 								</div>
-								<p>Lorem ipsum</p>
+								<p>
+									O Poder da Gestão Integrada: "Gerencie seu negócio de forma
+									inteligente com o TOTVS Protheus. Um sistema integrado que
+									oferece controle total, agilidade e eficiência em cada
+									processo."
+								</p>
 							</div>
 							<!-- Card 2 -->
 							<div class="activityCard">
 								<div class="titleActivityCard">
-									<h4>Segurança</h4>
+									<h4>CUSTOMIZAÇÃO E FLEXIBILIDADE</h4>
 									<img
-										src=""
+										src="./assets/images/icons/gerenciamento.png"
 										alt="icone de Sistema Seguro" />
 								</div>
-								<p>Lorem ipsum</p>
+								<p>
+									Sua solução, sua maneira. TOTVS Protheus permite customização
+									total, adaptando-se aos seus processos e necessidades
+									específicas.
+								</p>
 							</div>
 							<!-- Card 3 -->
 							<div class="activityCard">
 								<div class="titleActivityCard">
-									<h4>Performance</h4>
+									<h4>INTEGRAÇÃO E CONECTIVIDADE</h4>
 									<img
-										src=""
+										src="./assets/images/icons/conection.png"
 										alt="icone de Performance" />
 								</div>
-								<p>Lorem ipsum</p>
+								<p>
+									Conecte-se sem esforço. TOTVS Protheus integra-se
+									perfeitamente aos seus sistemas existentes, criando um
+									ambiente digital harmonioso para o seu negócio.
+								</p>
 							</div>
 						</div>
 						<!-- Imagens que representam o sistema -->
 						<div class="activityImages">
 							<img
-								src=""
+								class="img1"
+								src="/assets/images/images/img 2.jpg"
 								alt="Imagens que mostram performance e versatilidade de sistemas" />
 							<img
-								src=""
+								class="img2"
+								src="/assets/images/images/img 1.jpg"
 								alt="Imagens que mostram performance e versatilidade de sistemas" />
 						</div>
 					</div>
@@ -210,7 +234,7 @@
 						<!-- Textos que fazem convite para falar conosco -->
 						<div class="textKnowUs">
 							<h3>
-								Que tal entrar em contato para conhecer melhor nossas soluções
+								Que tal entrar em contato para conhecer melhor nossas soluções?
 							</h3>
 							<p>Fale com nossa equipe agora mesmo</p>
 						</div>
@@ -218,10 +242,7 @@
 						<a
 							class="contactUs"
 							href="#contact">
-							Fale conosco
-							<img
-								src=""
-								alt="Imagem de seta" />
+							<button class="buttonContact02">Fale conosco →</button>
 						</a>
 					</div>
 				</section>
@@ -471,4 +492,5 @@
 			</footer>
 		</div>
 	</body>
+	<script src="./assets/scripts/script.js"></script>
 </html>

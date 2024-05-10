@@ -4,7 +4,6 @@
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
-	background-color: white;
 	/* padding-top: 80px; */
 	background-image: url("/assets/images/bg/BG-1\ 1.png");
 	background-repeat: no-repeat;
@@ -68,6 +67,15 @@
 .arrow {
 	background-color: #ffffff00;
 	margin-bottom: 2.4rem;
-	padding: 0.2rem;
+	padding: 0.9rem;
 	cursor: pointer;
+	transition: all 0.15s linear;
+}
+
+.arrow:hover {
+	transform: translateY(5px) scaleX(0.95);
+}
+
+.scale-1-1 {
+	scale: 1.2;
 }
