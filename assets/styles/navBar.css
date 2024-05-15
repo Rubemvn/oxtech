@@ -31,15 +31,3 @@
 .logoNavBar {
 	height: 60px;
 }
-
-.buttonContact01 {
-	font-family: "Montserrat";
-	font-weight: 600;
-	font-size: 2rem;
-	background: #0a71a5;
-	background: linear-gradient(90deg, #0a71a5 0%, #54abdb 100%);
-	color: var(--white-00);
-	padding: 1rem 2.2rem;
-	border-radius: 1rem;
-	cursor: pointer;
-}

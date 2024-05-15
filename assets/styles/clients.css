@@ -1,11 +1,188 @@
+.contentClient {
+	height: 100vh;
+}
+
 .ourClients {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
+	height: 30vh;
 }
 
 .ourClients h2 {
+	/* margin-top: 3rem; */
 	color: var(--blue-00);
 	font-size: 5rem;
+}
+
+.clientsLogos {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	gap: 10rem;
+}
+
+.client img {
+	width: 14rem;
+	height: auto;
+}
+
+.client p {
+	font-size: 2.4rem;
+	font-style: italic;
+	font-weight: 700;
+	color: var(--gray-00);
+	text-align: center;
+}
+
+.feedbackAndInvitation {
+	display: flex;
+	justify-content: center;
+	height: 70vh;
+	background-image: url("/assets/images/images/IMG\ BG.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-size: cover;
+}
+
+.contentFeedback {
+	gap: 5rem;
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+
+.customerFeedback {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	/* justify-content: space-around; */
+	width: 60%;
+	gap: 1.5rem;
+
+	filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.3));
+}
+h3 {
+	text-align: center;
+	color: var(--blue-00);
+	font-size: 3.2rem;
+	width: 100%;
+}
+
+.feedback {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.profile {
+	width: 4.5rem;
+	height: auto;
+}
+
+.left,
+.right {
+}
+
+.left {
+	margin-left: 0;
+}
+
+.right {
+	justify-content: end;
+	flex-direction: row-reverse;
+	margin-right: 0;
+	text-align: justify;
+}
+
+.right .ballon {
+	flex-direction: row-reverse;
+}
+.right .ballon .pointer {
+	clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+.right .ballon .containerFeedback {
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 0;
+}
+
+.ballon {
+	display: flex;
+	width: 50rem;
+}
+
+.pointer {
+	background-color: var(--blue-00);
+	clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+	width: 9rem;
+	height: 3rem;
+}
+
+.containerFeedback {
+	background-color: var(--blue-00);
+	border-radius: 1rem;
+	border-top-left-radius: 0;
+	padding: 1.4rem;
+}
+
+.containerFeedback p {
+	color: var(--white-00);
+	font-size: 1.4rem;
+}
+
+.headerFeedback {
+	display: flex;
+	justify-content: space-between;
+}
+
+.headerFeedback h4 {
+	color: var(--blue-03);
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.stars {
+	height: 1.6rem;
+	width: auto;
+}
+
+.invitationFeedback {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.invitationFeedback h3 {
+	z-index: 2;
+}
+
+.cardInvitation {
+	margin-top: -1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--white-00);
+	padding: 3.9rem 3.1rem;
+	border-radius: 1rem;
+	width: 44rem;
+	gap: 2rem;
+}
+.cardInvitation p {
+	text-align: center;
+	color: var(--blue-00);
+	font-size: 2.6rem;
+	font-weight: 600;
+}
+
+.btnCtcFeedback {
+	width: 100%;
+	height: 6.6rem;
+	font-size: 2.6rem;
 }

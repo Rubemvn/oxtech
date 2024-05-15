@@ -1,6 +1,7 @@
 :root {
 	--white-00: #ffffff;
 	--black-00: #000;
+	--gray-00: #616161;
 	--blue-00: #004662;
 	--blue-01: #0a7da5;
 	--blue-02: #0a71a5;
@@ -38,4 +39,16 @@ body {
 	display: flex;
 	width: 100%;
 	flex-direction: column;
+}
+
+.buttonContact01 {
+	font-family: "Montserrat";
+	font-weight: 600;
+	font-size: 2rem;
+	background: #0a71a5;
+	background: linear-gradient(90deg, #0a71a5 0%, #54abdb 100%);
+	color: var(--white-00);
+	padding: 1rem 2.2rem;
+	border-radius: 1rem;
+	cursor: pointer;
 }
