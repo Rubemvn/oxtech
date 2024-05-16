@@ -1,0 +1,32 @@
+footer {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--white-00);
+}
+
+.contentFooter {
+	display: grid;
+	grid-template-areas: repeat(3, 1fr);
+	justify-content: space-between;
+	width: 80%;
+}
+
+.contentLeft,
+.contentCenter,
+.contentRight {
+	display: flex;
+	flex-direction: column;
+}
+
+.contentCenter {
+	justify-content: center;
+	text-align: center;
+}
+
+.contentRight {
+	justify-content: end;
+	text-align: right;
+}

@@ -33,7 +33,6 @@
 		<link
 			rel="stylesheet"
 			href="/assets/styles/globalStyles.css" />
-
 		<!-- NavBar -->
 		<link
 			rel="stylesheet"
@@ -54,6 +53,10 @@
 		<link
 			rel="stylesheet"
 			href="/assets/styles/contact.css" />
+		<!-- Footer -->
+		<link
+			rel="stylesheet"
+			href="/assets/styles/footer.css" />
 		<!--  -->
 		<!--  -->
 
@@ -443,6 +446,7 @@
 								Nome e Sobrenome *
 								<input
 									type="text"
+									placeholder="ex: José da Silva"
 									required />
 							</label>
 							<!-- Label que agrupa o titulo do input e o input -->
@@ -450,6 +454,7 @@
 								Email *
 								<input
 									type="email"
+									placeholder="example@email.com"
 									required />
 							</label>
 							<!-- Div que agrupa inputs de telefone e motivo do contato -->
@@ -457,29 +462,40 @@
 								<!-- Label que agrupa o titulo do input e o input -->
 								<label>
 									Telefone *
-									<input type="tel" />
+									<input
+										type="tel"
+										placeholder="(XX) X-XXXX-XXXX" />
 								</label>
 								<!-- Label que agrupa o titulo do select e o select -->
-								<label>
+								<label class="reasonForm">
 									Motivo do Contato *
 									<select
 										name=""
-										id="">
+										id=""
+										value="Selecione...">
 										<!-- Opções do Select -->
-										<option value=""></option>
-										<option value=""></option>
-										<option value=""></option>
-										<option value=""></option>
+										<option
+											value=""
+											class="selectPlaceholder"
+											disabled
+											selected
+											hidden
+											style="color: gray">
+											Selecione...
+										</option>
+										<option value="">1 -</option>
+										<option value="">2 -</option>
+										<option value="">3 -</option>
+										<option value="">4 -</option>
 									</select>
 								</label>
 							</div>
 							<!-- Botão que envia dados do formulário -->
-							<button>Enviar</button>
+							<submit class="buttonContact01 btnForm">ENVIAR</submit>
 						</form>
 					</div>
 				</section>
 			</main>
-			<!--  -->
 			<!--  -->
 			<!-- Footer da página -->
 			<footer>
