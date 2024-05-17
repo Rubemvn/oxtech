@@ -84,6 +84,14 @@
 	padding: 1.5rem 2.5rem;
 	border-radius: 0.7rem;
 	width: 100%;
+
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("/assets/images/icons/seta.svg");
+	background-size: 2rem;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 2.5rem) center;
 }
 .reasonForm select option {
 	font-weight: 600;
