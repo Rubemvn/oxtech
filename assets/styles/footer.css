@@ -77,6 +77,16 @@ footer {
 	text-align: right;
 }
 
+.contentRight ul li img {
+	width: 4rem;
+	height: auto;
+}
+
+.loc {
+	height: auto;
+	width: 8rem;
+}
+
 .developed {
 	display: flex;
 	justify-content: center;
