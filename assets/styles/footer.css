@@ -77,8 +77,30 @@ footer {
 	text-align: right;
 }
 
+.contentRight ul {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.contentRight ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.contentRight ul li a {
+	text-decoration: none;
+	color: var(--blue-00);
+	font-size: 2.4rem;
+	font-weight: 600;
+}
+
 .contentRight ul li img {
-	width: 4rem;
+	width: 3rem;
 	height: auto;
 }
 

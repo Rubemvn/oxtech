@@ -15,9 +15,10 @@
 
 .homeContainer {
 	bottom: 0;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
 	width: 80%;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5rem;
 	align-content: space-between;
 	height: 65%;
 }
@@ -35,23 +36,27 @@
 	width: 38.5rem;
 }
 
-.welcome {
+.welcome,
+.invitation {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	padding: 0 5rem;
+}
+
+.welcome {
 	gap: 2rem;
 }
 .welcome p {
 	color: var(--white-00);
 	font-size: 2rem;
 	font-weight: 500;
-	width: 50rem;
+	/* width: 50rem; */
+	width: 100%;
 }
 
 .invitation {
-	display: flex;
 	text-align: right;
-	justify-content: right;
-	flex-direction: column;
 	width: 65rem;
 
 	gap: 2rem;
