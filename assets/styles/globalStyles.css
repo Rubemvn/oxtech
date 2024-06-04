@@ -3,10 +3,11 @@
 	--white-01: #e2e2e2;
 	--black-00: #000;
 	--gray-00: #616161;
-	--blue-00: #004662;
-	--blue-01: #0a7da5;
-	--blue-02: #0a71a5;
-	--blue-03: #54abdb;
+	--blue-00: #00426b;
+	--blue-01: #1f8cdd;
+	--blue-02: #2ba3ff;
+	--blue-03: #64bcff;
+	--blue-04: #004a79;
 }
 
 * {
@@ -47,8 +48,8 @@ body {
 	font-family: "Montserrat";
 	font-weight: 600;
 	font-size: 2rem;
-	background: #0a71a5;
-	background: linear-gradient(90deg, #0a71a5 0%, #54abdb 100%);
+	background: #00426b;
+	background: linear-gradient(90deg, #00426b 0%, #1f8cdd 100%);
 	color: var(--white-00);
 	padding: 1rem 2.2rem;
 	border-radius: 1rem;

@@ -5,9 +5,10 @@
 .ourClients {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
-	height: 30vh;
+	height: 40vh;
+	padding: 4rem 0;
 }
 
 .ourClients h2 {
@@ -23,8 +24,23 @@
 	gap: 10rem;
 }
 
+.client {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	border-radius: 1.5rem;
+	box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.29);
+	-webkit-box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.29);
+	-moz-box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.29);
+}
+
+.piratininga {
+	background-color: #313624;
+}
+
 .client img {
-	width: 14rem;
+	width: 12rem;
 	height: auto;
 }
 
@@ -232,22 +248,18 @@ h3 {
 	height: 22rem;
 	border-radius: 1rem;
 
-	background: rgb(0, 98, 138);
+	background: var(--blue-04);
 	background: -moz-linear-gradient(
 		15deg,
-		rgba(0, 98, 138, 1) 0%,
-		rgba(37, 167, 212, 1) 100%
+		var(--blue-04) 0%,
+		var(--blue-01) 100%
 	);
 	background: -webkit-linear-gradient(
 		15deg,
-		rgba(0, 98, 138, 1) 0%,
-		rgba(37, 167, 212, 1) 100%
+		var(--blue-04) 0%,
+		var(--blue-01) 100%
 	);
-	background: linear-gradient(
-		15deg,
-		rgba(0, 98, 138, 1) 0%,
-		rgba(37, 167, 212, 1) 100%
-	);
+	background: linear-gradient(15deg, var(--blue-04) 0%, var(--blue-01) 100%);
 }
 
 .cardSegment img {
