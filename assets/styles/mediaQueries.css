@@ -1,12 +1,6 @@
 /* para telas menores que 1440px */
 @media screen and (max-width: 1440px) {
 	/*   
-	
-	
-  ESPAÇO DEDICADO A NAVBAR
-	
-	
-	
 	*/
 
 	#home {
@@ -32,10 +26,65 @@
 			}
 		}
 	}
+
+	#aboutUs {
+		.contentActivitys {
+			width: 90%;
+			justify-content: space-between;
+		}
+
+		.activitys {
+		}
+
+		.activityCard {
+			width: 45rem;
+			padding: 1.5rem;
+
+			.titleActivityCard h4 {
+				font-size: 1.8rem;
+			}
+
+			.titleActivityCard img {
+				height: 2.4rem;
+			}
+		}
+
+		.activityCard p {
+			font-size: 1.4rem;
+		}
+
+		.activityImages {
+			height: 42rem;
+			width: 42rem;
+		}
+
+		.img1 {
+			height: 23rem;
+		}
+		.img2 {
+			height: 21rem;
+		}
+
+		.aboutUsFooter {
+			gap: 2rem;
+			padding: 0 2rem;
+
+			.textKnowUs h3 {
+				font-size: 3.5rem;
+			}
+			.textKnowUs p {
+				font-size: 2.6rem;
+			}
+		}
+	}
 }
 
 /* para telas menores que 1024px */
 @media screen and (max-width: 1024px) {
+	.navBar ul {
+		display: none;
+	}
+
 	#home {
 		.homeContainer {
 			display: flex;
