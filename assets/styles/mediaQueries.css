@@ -3,6 +3,7 @@
 	/*   
 	*/
 
+	/* Homeha */
 	#home {
 		.homeContainer {
 			width: 90%;
@@ -27,53 +28,105 @@
 		}
 	}
 
+	/* AboutUs */
 	#aboutUs {
 		.contentActivitys {
-			width: 90%;
 			justify-content: space-between;
+			width: 90%;
 		}
 
 		.activitys {
+			width: 100%;
 		}
 
-		.activityCard {
-			width: 45rem;
-			padding: 1.5rem;
+		.activityCards {
+			width: 65%;
 
-			.titleActivityCard h4 {
-				font-size: 1.8rem;
+			h2 {
+				font-size: 4rem;
 			}
 
-			.titleActivityCard img {
-				height: 2.4rem;
-			}
-		}
+			.activityCard {
+				/* width: 55rem; */
+				padding: 1.5rem;
 
-		.activityCard p {
-			font-size: 1.4rem;
+				.titleActivityCard h4 {
+					font-size: 1.5rem;
+				}
+
+				.titleActivityCard img {
+					height: 2rem;
+				}
+
+				p {
+					font-size: 1.3rem;
+				}
+			}
 		}
 
 		.activityImages {
-			height: 42rem;
-			width: 42rem;
+			height: 100%;
+			max-height: 42rem;
+			width: 33%;
+			padding: 1rem 0;
+			z-index: 10;
 		}
 
 		.img1 {
-			height: 23rem;
+			height: 52%;
+			max-height: 30rem;
+			top: 1rem;
 		}
 		.img2 {
-			height: 21rem;
+			height: 48%;
+			max-height: 26rem;
+			bottom: 1rem;
 		}
 
 		.aboutUsFooter {
-			gap: 2rem;
-			padding: 0 2rem;
+			gap: 1rem;
 
 			.textKnowUs h3 {
-				font-size: 3.5rem;
+				font-size: 3rem;
 			}
 			.textKnowUs p {
-				font-size: 2.6rem;
+				font-size: 2.2rem;
+			}
+			.buttonContact02 {
+				height: 5.5rem;
+				width: 27rem;
+				font-size: 2.4rem;
+			}
+		}
+	}
+
+	/* Clients */
+	.contentClient {
+		.contentFeedback {
+			width: 90%;
+			gap: 2rem;
+			.profile {
+				width: 3.5rem;
+			}
+
+			.ballon {
+				width: 40rem;
+			}
+			.containerFeedback p {
+				font-size: 1.2rem;
+			}
+			.headerFeedback h4 {
+				font-size: 1.6rem;
+			}
+			.stars {
+				height: 1.4rem;
+			}
+			.pointer {
+				width: 7rem;
+				height: 2rem;
+			}
+			.feedback {
+				gap: 0.5rem;
 			}
 		}
 	}
@@ -85,6 +138,7 @@
 		display: none;
 	}
 
+	/* Home */
 	#home {
 		.homeContainer {
 			display: flex;
@@ -104,10 +158,86 @@
 			}
 		}
 	}
+
+	/* AboutUs */
+	#aboutUs {
+		height: 100%;
+		.contentActivitys {
+			flex-direction: column;
+			padding: 3rem 0;
+			gap: 3rem;
+
+			.activityCards {
+				width: 100%;
+				align-items: center;
+				justify-content: space-between;
+				gap: 3rem;
+
+				h2 {
+					font-size: 4rem;
+				}
+
+				.activityCard {
+					width: 100%;
+				}
+			}
+
+			.activityImages {
+				width: 100%;
+				display: flex;
+				/* flex-direction: column; */
+				gap: 2rem;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+
+				.img1,
+				.img2 {
+					position: relative;
+					top: 0;
+					bottom: 0;
+					width: calc(50% - 1rem);
+					height: auto;
+				}
+			}
+		}
+
+		.aboutUsFooter {
+			.contentAboutUsFooter {
+				padding: 2rem;
+
+				.textKnowUs h3 {
+					font-size: 2.6rem;
+				}
+				.textKnowUs p {
+					font-size: 2rem;
+				}
+
+				.buttonContact02 {
+					height: 5rem;
+					width: 25rem;
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	/* Clients */
+	.contentClient {
+		.contentFeedback {
+			.cardInvitation {
+				padding: 2rem;
+			}
+			.cardInvitation p {
+				font-size: 2rem;
+			}
+		}
+	}
 }
 
 /* para telas menores que 768px */
 @media screen and (max-width: 768px) {
+	/* Homeha */
 	#home {
 		.homeContainer {
 			.invitation h2 {
@@ -118,10 +248,36 @@
 			}
 		}
 	}
+
+	/* AboutUs */
+	#aboutUs {
+		.aboutUsFooter {
+			.contentAboutUsFooter {
+				flex-direction: column;
+				gap: 1.3rem;
+				width: 100%;
+				padding: 1.2rem;
+
+				.textKnowUs h3 {
+					font-size: 2.2rem;
+				}
+				.textKnowUs p {
+					font-size: 2rem;
+				}
+
+				.buttonContact02 {
+					height: 5rem;
+					width: 25rem;
+					font-size: 2rem;
+				}
+			}
+		}
+	}
 }
 
 /* para telas menores que 425px */
 @media screen and (max-width: 425px) {
+	/* Homeha */
 	#home {
 		gap: 5rem;
 		.homeContainer {
@@ -143,10 +299,65 @@
 			}
 		}
 	}
+
+	/* AboutUs */
+	#aboutUs {
+		.contentActivitys {
+			.activityCards {
+				h2 {
+					font-size: 3.5rem;
+				}
+				.activityCard {
+					padding: 1.5rem;
+
+					.titleActivityCard h4 {
+						font-size: 1.4rem;
+					}
+
+					p {
+						font-size: 1.2rem;
+					}
+
+					.titleActivityCard img {
+						height: 2rem;
+					}
+				}
+			}
+			.activityImages {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				marg: 2rem 0;
+
+				.img1,
+				.img2 {
+					width: 90%;
+				}
+			}
+		}
+		.aboutUsFooter {
+			.contentAboutUsFooter {
+				.textKnowUs h3 {
+					font-size: 1.6rem;
+				}
+				.textKnowUs p {
+					font-size: 1.3rem;
+				}
+
+				.buttonContact02 {
+					height: 4rem;
+					width: 23rem;
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
 }
 
 /* para telas menores que 375px */
 @media screen and (max-width: 375px) {
+	/* Homeha */
 	#home {
 		.homeContainer {
 			.title h1 {

@@ -1,5 +1,6 @@
 .contentClient {
-	height: 100vh;
+	height: auto;
+	min-height: 100vh;
 }
 
 .ourClients {
@@ -7,7 +8,8 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height: 40vh;
+	height: auto;
+	gap: 3rem;
 	padding: 4rem 0;
 }
 
@@ -19,9 +21,8 @@
 
 .clientsLogos {
 	display: flex;
-	justify-content: center;
-	width: 100%;
-	gap: 10rem;
+	justify-content: space-evenly;
+	width: 90%;
 }
 
 .client {
@@ -56,6 +57,7 @@
 	display: flex;
 	justify-content: center;
 	height: 70vh;
+	width: 100%;
 	background-image: url("/assets/images/images/IMG\ BG.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -118,9 +120,11 @@ h3 {
 .right .ballon {
 	flex-direction: row-reverse;
 }
+
 .right .ballon .pointer {
 	clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
 }
+
 .right .ballon .containerFeedback {
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 0;
@@ -187,7 +191,8 @@ h3 {
 	background-color: var(--white-00);
 	padding: 3.9rem 3.1rem;
 	border-radius: 1rem;
-	width: 44rem;
+	max-width: 44rem;
+	width: 100%;
 	gap: 2rem;
 }
 .cardInvitation p {
