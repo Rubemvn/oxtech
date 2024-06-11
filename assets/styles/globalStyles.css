@@ -1,5 +1,6 @@
 :root {
 	--white-00: #ffffff;
+	--transparent-00: #ffffff65;
 	--white-01: #e2e2e2;
 	--black-00: #000;
 	--gray-00: #616161;
@@ -19,14 +20,38 @@
 	border: 0;
 }
 
+/* Estilos para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+	cursor: pointer;
+	width: 1.4rem; /* Largura da barra de rolagem */
+	margin: 2px; /* Margem nos lados */
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--white-01); /* Cor do fundo da trilha da barra de rolagem */
+	margin: 2px; /* Margem nos lados */
+	cursor: pointer;
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 0.5rem;
+	background: var(--blue-00); /* Cor do polegar (thumb) da barra de rolagem */
+	border: 2px solid var(--white-01); /* Cor de fundo ao redor do polegar */
+	cursor: pointer;
+}
+
 html {
 	/* a cada 1rem será considerado 10px */
 	font-size: 62.5%;
 	size: 62.5%;
+	scroll-behavior: smooth;
+	/* scrollbar-width: thin;
+	scrollbar-color: var(--blue-00) var(--white-01); */
 }
 
 html {
-	scroll-behavior: smooth;
 }
 
 html,
@@ -36,6 +61,7 @@ body {
 
 body {
 	font-size: 1.6rem;
+	-ms-overflow-style: scrollbar; /* Garantir que a barra de rolagem apareça no IE e Edge */
 }
 
 .content {

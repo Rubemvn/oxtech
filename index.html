@@ -82,23 +82,48 @@
 							alt="Logo da OXTECH"
 					/></a>
 					<!-- Menu da página com todas botões direcionando para cada seção -->
-					<ul>
-						<li>
-							<a href="#home"> HOME </a>
-						</li>
-						<li>
-							<a href="#aboutUs"> SOBRE </a>
-						</li>
-						<li>
-							<a href="#clients"> CLIENTES </a>
-						</li>
-						<li>
-							<!-- Botão contate-nos -->
-							<a href="#contact">
-								<button class="buttonContact01">CONTATE-NOS</button>
-							</a>
-						</li>
-					</ul>
+					<div class="menuSection">
+						<div class="menuToggle">
+							<div class="one"></div>
+							<div class="two"></div>
+							<div class="three"></div>
+						</div>
+
+						<ul class="navBarOptions">
+							<li>
+								<a
+									href="#home"
+									onclick="closeMenuToggle()">
+									HOME
+								</a>
+							</li>
+							<li>
+								<a
+									href="#aboutUs"
+									onclick="closeMenuToggle()">
+									SOBRE
+								</a>
+							</li>
+							<li>
+								<a
+									href="#clients"
+									onclick="closeMenuToggle()">
+									CLIENTES
+								</a>
+							</li>
+							<li>
+								<!-- Botão contate-nos -->
+								<a href="#contact">
+									<button
+										class="buttonContact01"
+										onclick="closeMenuToggle()">
+										CONTATE-NOS
+									</button>
+								</a>
+							</li>
+							<div class="bgMenu"></div>
+						</ul>
+					</div>
 				</nav>
 			</header>
 			<!-- Nessa tag está agrupado todo conteúdo da página -->
@@ -330,17 +355,17 @@
 											<div class="pointer"></div>
 											<div class="containerFeedback">
 												<div class="headerFeedback">
-													<h4>Maria - Empresa X</h4>
+													<h4>Samuel Araújo</h4>
 													<img
 														src="/assets/images/icons/STARS.png"
 														alt="Estrelas de avaliação"
 														class="stars" />
 												</div>
 												<p>
-													Lorem Ipsum is simply dummy text of the printing and
-													typesetting industry. Lorem Ipsum has been the
-													industry's standard dummy text ever since the 1500s,
-													when an unknown printer. 🥰❤️
+													O suporte da TOTVS é excepcional e a escalabilidade do
+													Protheus acompanha nosso crescimento contínuo sem
+													dificuldades. Estamos muito satisfeitos com essa
+													escolha! 🌟📈
 												</p>
 											</div>
 										</div>
@@ -355,17 +380,18 @@
 											<div class="pointer"></div>
 											<div class="containerFeedback">
 												<div class="headerFeedback">
-													<h4>Maria - Empresa X</h4>
+													<h4>Lídia Silveira</h4>
 													<img
 														src="/assets/images/icons/STARS.png"
 														alt="Estrelas de avaliação"
 														class="stars" />
 												</div>
 												<p>
-													Lorem Ipsum is simply dummy text of the printing and
-													typesetting industry. Lorem Ipsum has been the
-													industry's standard dummy text ever since the 1500s,
-													when an unknown printer. 🥰❤️
+													Como analista financeira, vejo que o TOTVS Protheus
+													melhorou significativamente nossa gestão. Com suas
+													funcionalidades avançadas e relatórios detalhados,
+													nossa tomada de decisão ficou muito mais ágil e
+													precisa. 📊💡
 												</p>
 											</div>
 										</div>
@@ -380,17 +406,17 @@
 											<div class="pointer"></div>
 											<div class="containerFeedback">
 												<div class="headerFeedback">
-													<h4>Maria - Empresa X</h4>
+													<h4>Alysson Alencar</h4>
 													<img
 														src="/assets/images/icons/STARS.png"
 														alt="Estrelas de avaliação"
 														class="stars" />
 												</div>
 												<p>
-													Lorem Ipsum is simply dummy text of the printing and
-													typesetting industry. Lorem Ipsum has been the
-													industry's standard dummy text ever since the 1500s,
-													when an unknown printer. 🥰❤️
+													O TOTVS Protheus melhorou significativamente nossa
+													gestão financeira. Com suas funcionalidades avançadas
+													e relatórios detalhados, nossa tomada de decisão ficou
+													muito mais ágil e precisa. 📊💡
 												</p>
 											</div>
 										</div>
@@ -417,33 +443,33 @@
 						<div class="contentSegments">
 							<h2>Segmentos de mercado que atendemos</h2>
 							<div class="cardsSegments">
-								<div class="cardSegment gn">
+								<div class="cardSegment">
 									<img
 										src="/assets/images/images/gestao-de-negocios.png"
 										alt="Imagem que representa gestão de negócios" />
 									Gestão de<br />Negócios
 								</div>
-								<div class="cardSegment pc">
+								<div class="cardSegment">
 									<img
 										src="/assets/images/images/pecuaria.png"
 										alt="Imagem
 									que representa a Pecuária" />
 									Pecuária
 								</div>
-								<div class="cardSegment lc">
+								<div class="cardSegment">
 									<img
 										src="/assets/images/images/locacao.png"
 										alt="Imagem que representa a Locação de veículos" />
 									Locação de<br />
 									veículos
 								</div>
-								<div class="cardSegment pg">
+								<div class="cardSegment">
 									<img
 										src="/assets/images/images/posto-de-gasolina.png"
 										alt="Imagem que representa Postos de gasolina" />
 									Postos de<br />Gasolina
 								</div>
-								<div class="cardSegment cm">
+								<div class="cardSegment">
 									<img
 										src="/assets/images/images/comprar.png"
 										alt="Imagem que representa eo comércio" />
@@ -462,7 +488,9 @@
 						<!-- Título do formulário -->
 						<h2 class="titleForm">ENTRE EM CONTATO</h2>
 						<!-- Form -->
-						<form action="">
+						<form
+							action="https://api.staticforms.xyz/submit"
+							method="post">
 							<!-- Label que agrupa o titulo do input e o input -->
 							<label>
 								Nome e Sobrenome *
@@ -482,6 +510,10 @@
 							<!-- Div que agrupa inputs de telefone e motivo do contato -->
 							<div class="phoneAndReason">
 								<!-- Label que agrupa o titulo do input e o input -->
+								<input
+									type="text"
+									name="honeypot"
+									style="display: none" />
 								<label>
 									Telefone *
 									<input
@@ -505,10 +537,20 @@
 											style="color: gray">
 											Selecione...
 										</option>
-										<option value="">1 -</option>
-										<option value="">2 -</option>
-										<option value="">3 -</option>
-										<option value="">4 -</option>
+										<option value="">1 - Solicitar Demonstração</option>
+										<option value="">2 - Solicitar Orçamento</option>
+										<option value="">3 - Tirar Dúvidas Comerciais</option>
+										<option value="">4 - Enviar Feedback e Sugestões</option>
+										<option value="">
+											5 - Propor Parcerias e Colaborações
+										</option>
+										<option value="">
+											6 - Propor Parcerias e Colaborações
+										</option>
+										<option value="">
+											7 - Solicitar Consultoria e Implementação
+										</option>
+										<option value="">8 - Outros</option>
 									</select>
 								</label>
 							</div>
@@ -525,7 +567,7 @@
 				<div class="contentFooter">
 					<!-- Seção 1 com Logo e botão de contate-nos -->
 					<div class="contentLeft">
-						<a href="#contact">
+						<a href="/">
 							<img
 								src="./assets/images/icons/logo-horizontal-azul-mar.svg"
 								alt="Logo da OXTECH" />
@@ -569,7 +611,7 @@
 							</li>
 							<!-- Link para o email da empresa -->
 							<li>
-								<a href="mailto:email@gmail.com">email@gmail.com</a>
+								<a href="mailto:email@gmail.com">welinton@oxtech.com.br</a>
 								<img
 									src="/assets/images/icons/email.png"
 									alt="logo monocromática do instagram" />
@@ -604,4 +646,5 @@
 		</div>
 	</body>
 	<script src="./assets/scripts/script.js"></script>
+	<script src="./assets/scripts/menu.js"></script>
 </html>

@@ -11,10 +11,12 @@ footer {
 
 .contentFooter {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* Duas colunas de largura igual */
-	/* grid-gap: 20px; */
-	justify-content: space-between;
-	width: 80%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "CTL CTC CTR";
+	/* justify-content: space-between; */
+	/* gap: 3rem; */
+	width: 90%;
 	height: 21rem;
 }
 
@@ -23,11 +25,24 @@ footer {
 	border-right: 0.3rem solid var(--blue-00);
 }
 
+.contentLeft {
+	grid-area: CTL;
+}
+
+.contentCenter {
+	grid-area: CTC;
+}
+
+.contentRight {
+	grid-area: CTR;
+}
+
 .contentLeft,
 .contentCenter,
 .contentRight {
 	display: flex;
 	flex-direction: column;
+	padding: 0 5rem;
 }
 
 .contentLeft {
@@ -47,7 +62,7 @@ footer {
 }
 
 .btnCtcFooter {
-	width: 22rem;
+	width: 100%;
 	text-decoration: none;
 	color: var(--blue-00);
 	font-weight: 600;
