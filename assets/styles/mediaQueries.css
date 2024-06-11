@@ -3,7 +3,7 @@
 	/*   
 	*/
 
-	/* Homeha */
+	/* Home */
 	#home {
 		.homeContainer {
 			width: 90%;
@@ -30,6 +30,8 @@
 
 	/* AboutUs */
 	#aboutUs {
+		/* height: 100%;
+		min-height: 100vh; */
 		.contentActivitys {
 			justify-content: space-between;
 			width: 90%;
@@ -101,6 +103,9 @@
 	}
 
 	/* Clients */
+	.clientsLogos {
+		width: 90%;
+	}
 	.contentClient {
 		.contentFeedback {
 			width: 90%;
@@ -108,7 +113,6 @@
 			.profile {
 				width: 3.5rem;
 			}
-
 			.ballon {
 				width: 40rem;
 			}
@@ -128,6 +132,18 @@
 			.feedback {
 				gap: 0.5rem;
 			}
+		}
+	}
+	.contentSegments {
+		h2 {
+			font-size: 4rem;
+		}
+
+		.cardsSegments {
+			width: 90%;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 4rem; /* Espaço entre os elementos */
 		}
 	}
 }
@@ -223,7 +239,11 @@
 	}
 
 	/* Clients */
+
 	.contentClient {
+		.ourClients h2 {
+			font-size: 4rem;
+		}
 		.contentFeedback {
 			.cardInvitation {
 				padding: 2rem;
@@ -231,13 +251,24 @@
 			.cardInvitation p {
 				font-size: 2rem;
 			}
+
+			.btnCtcFeedback {
+				font-size: 2rem;
+				height: 5rem;
+			}
+		}
+	}
+	.segments {
+		width: 100%;
+		.contentSegments {
+			width: 100%;
 		}
 	}
 }
 
 /* para telas menores que 768px */
 @media screen and (max-width: 768px) {
-	/* Homeha */
+	/* Home */
 	#home {
 		.homeContainer {
 			.invitation h2 {
@@ -273,11 +304,24 @@
 			}
 		}
 	}
+
+	/* Clients */
+	.contentClient {
+		.clientsLogos {
+			gap: 2rem;
+		}
+		.ourClients h2 {
+			font-size: 3rem;
+		}
+		.client {
+			scale: 0.95;
+		}
+	}
 }
 
 /* para telas menores que 425px */
 @media screen and (max-width: 425px) {
-	/* Homeha */
+	/* Home */
 	#home {
 		gap: 5rem;
 		.homeContainer {
@@ -353,11 +397,21 @@
 			}
 		}
 	}
+
+	/* Clients */
+	.contentClient {
+		.clientsLogos {
+			gap: 0rem;
+		}
+		.client {
+			scale: 0.83;
+		}
+	}
 }
 
 /* para telas menores que 375px */
 @media screen and (max-width: 375px) {
-	/* Homeha */
+	/* Home */
 	#home {
 		.homeContainer {
 			.title h1 {
@@ -377,6 +431,18 @@
 				width: 4.5rem;
 				height: auto;
 			}
+		}
+	}
+
+	/* Clients */
+	.contentClient {
+		.client {
+			scale: 0.8;
+			width: 14rem;
+			height: 14rem;
+		}
+		.client img {
+			width: 10rem;
 		}
 	}
 }

@@ -1,6 +1,10 @@
+.segments {
+	width: 100%;
+}
 .contentClient {
 	height: auto;
-	min-height: 100vh;
+	/* min-height: 100vh; */
+	width: 100%;
 }
 
 .ourClients {
@@ -14,19 +18,24 @@
 }
 
 .ourClients h2 {
+	font-size: 5rem;
 	/* margin-top: 3rem; */
 	color: var(--blue-00);
-	font-size: 5rem;
+	text-align: center;
 }
 
 .clientsLogos {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
-	width: 90%;
+	width: 80%;
+	gap: 3rem;
 }
 
 .client {
 	display: flex;
+	width: 16rem;
+	height: 16rem;
 	align-items: center;
 	justify-content: center;
 	padding: 2rem;
@@ -56,7 +65,7 @@
 .feedbackAndInvitation {
 	display: flex;
 	justify-content: center;
-	height: 70vh;
+	height: 100%;
 	width: 100%;
 	background-image: url("/assets/images/images/IMG\ BG.png");
 	background-position: center;
@@ -100,10 +109,6 @@ h3 {
 .profile {
 	width: 4.5rem;
 	height: auto;
-}
-
-.left,
-.right {
 }
 
 .left {
@@ -237,6 +242,7 @@ h3 {
 	gap: 6rem;
 	justify-content: space-between;
 	align-content: space-between;
+	width: 100%;
 }
 
 .cardSegment {
@@ -265,6 +271,28 @@ h3 {
 		var(--blue-01) 100%
 	);
 	background: linear-gradient(15deg, var(--blue-04) 0%, var(--blue-01) 100%);
+}
+
+.gn {
+	grid-area: gn;
+}
+.pc {
+	grid-area: pc;
+}
+.lc {
+	grid-area: lc;
+}
+.pg {
+	grid-area: pg;
+}
+.cm {
+	grid-area: cm;
+}
+
+.pg,
+.cm {
+	justify-self: center;
+	align-self: center;
 }
 
 .cardSegment img {
