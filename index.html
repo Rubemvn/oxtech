@@ -32,35 +32,35 @@
 		<!-- Estilos global -->
 		<link
 			rel="stylesheet"
-			href="/assets/styles/globalStyles.css" />
+			href="./assets/styles/globalStyles.css" />
 		<!-- NavBar -->
 		<link
 			rel="stylesheet"
-			href="/assets/styles/navBar.css" />
+			href="./assets/styles/navBar.css" />
 		<!-- Home -->
 		<link
 			rel="stylesheet"
-			href="/assets/styles/home.css" />
+			href="./assets/styles/home.css" />
 		<!-- AboutUs -->
 		<link
 			rel="stylesheet"
-			href="/assets/styles/aboutUs.css" />
+			href="./assets/styles/aboutUs.css" />
 		<!-- Clients -->
 		<link
 			rel="stylesheet"
-			href="/assets/styles/clients.css" />
+			href="./assets/styles/clients.css" />
 		<!-- Contact -->
 		<link
 			rel="stylesheet"
-			href="/assets/styles/contact.css" />
+			href="./assets/styles/contact.css" />
 		<!-- Footer -->
 		<link
 			rel="stylesheet"
-			href="/assets/styles/footer.css" />
+			href="./assets/styles/footer.css" />
 		<!-- Media Queries -->
 		<link
 			rel="stylesheet"
-			href="/assets/styles/mediaQueries.css" />
+			href="./assets/styles/mediaQueries.css" />
 		<!--  -->
 		<!--  -->
 
@@ -499,6 +499,7 @@
 							<label>
 								Nome e Sobrenome *
 								<input
+									name="name"
 									type="text"
 									placeholder="ex: José da Silva"
 									required />
@@ -507,6 +508,7 @@
 							<label>
 								Email *
 								<input
+									name="email"
 									type="email"
 									placeholder="example@email.com"
 									required />
@@ -521,6 +523,7 @@
 								<label>
 									Telefone *
 									<input
+										name="phone"
 										type="tel"
 										placeholder="(XX) X-XXXX-XXXX" />
 								</label>
@@ -528,7 +531,7 @@
 								<label class="reasonForm">
 									Motivo do Contato *
 									<select
-										name=""
+										name="$reasonForContact"
 										id=""
 										value="Selecione...">
 										<!-- Opções do Select -->
