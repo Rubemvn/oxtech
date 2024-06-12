@@ -10,7 +10,7 @@
 .activitys {
 	display: flex;
 	justify-content: center;
-	background-image: url("/assets/images/bg/BG\ aboutUs.png");
+	background-image: url("./assets/images/bg/BG\ aboutUs.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-clip: padding-box;
