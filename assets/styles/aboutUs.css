@@ -171,3 +171,9 @@
 	color: var(--blue-01);
 	border-radius: 1rem;
 }
+
+.buttonContact02:hover {
+	border: 1px solid var(--blue-01);
+	scale: 1.04;
+	animation: rotate 0.3s infinite;
+}

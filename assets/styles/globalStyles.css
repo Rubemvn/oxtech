@@ -75,9 +75,49 @@ body {
 	font-weight: 600;
 	font-size: 2rem;
 	background: #00426b;
-	background: linear-gradient(90deg, #00426b 0%, #1f8cdd 100%);
+	background: linear-gradient(
+		100deg,
+		#00426b,
+		#1f8cdd,
+		#00426b,
+		#1f8cdd,
+		#00426b
+	);
+	background-size: 500% 100%;
 	color: var(--white-00);
 	padding: 1rem 2.2rem;
 	border-radius: 1rem;
 	cursor: pointer;
+
+	transition: scale 0.4s ease-in-out, degrade;
+}
+
+.buttonContact01:hover {
+	border: 1px solid var(--blue-01);
+	scale: 1.04;
+	animation: rotate 0.3s infinite;
+}
+
+@keyframes rotate {
+	25% {
+		transform: rotateZ(1deg);
+	}
+	50% {
+		transform: rotateZ(0deg);
+	}
+	75% {
+		transform: rotateZ(-1deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes degrade {
+	0% {
+		background-position-x: 0%;
+	}
+	100% {
+		background-position-x: 100%;
+	}
 }

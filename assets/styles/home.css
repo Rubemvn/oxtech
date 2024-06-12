@@ -80,7 +80,3 @@
 .arrow:hover {
 	transform: translateY(5px) scaleX(0.95);
 }
-
-.btnCtcHome {
-	/* scale: 1.2; */
-}
