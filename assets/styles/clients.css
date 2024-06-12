@@ -200,6 +200,9 @@ h3 {
 	width: 100%;
 	gap: 2rem;
 }
+.cardInvitation a {
+	width: 100%;
+}
 .cardInvitation p {
 	text-align: center;
 	color: var(--blue-00);

@@ -91,7 +91,7 @@
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background-image: url("/assets/images/icons/seta.svg");
+	background-image: url("../images/icons/seta.svg");
 	background-size: 2rem;
 	background-repeat: no-repeat;
 	background-position: calc(100% - 2.5rem) center;
