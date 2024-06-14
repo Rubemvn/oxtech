@@ -43,6 +43,13 @@
 	box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.29);
 	-webkit-box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.29);
 	-moz-box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.29);
+
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		scale: 1.03;
+	}
 }
 
 .piratininga {
@@ -67,7 +74,7 @@
 	justify-content: center;
 	height: 100%;
 	width: 100%;
-	background-image: url("../images/images/IMG\ BG.png");
+	background-image: url("../images/bg/bg-clients.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-clip: border-box;
@@ -274,6 +281,12 @@ h3 {
 		var(--blue-01) 100%
 	);
 	background: linear-gradient(15deg, var(--blue-04) 0%, var(--blue-01) 100%);
+
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		scale: 1.04;
+	}
 }
 
 .gn {

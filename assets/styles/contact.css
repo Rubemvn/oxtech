@@ -7,7 +7,7 @@
 	align-items: center;
 	padding: 1rem 0;
 
-	background-image: url("../images/bg/BG-4\ 1.png");
+	background-image: url("../images/bg/bg-contact.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -87,6 +87,7 @@
 	padding: 1.5rem 2.5rem;
 	border-radius: 0.7rem;
 	width: 100%;
+	cursor: pointer;
 
 	appearance: none;
 	-webkit-appearance: none;
