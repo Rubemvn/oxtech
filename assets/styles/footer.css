@@ -121,6 +121,11 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--blue-00);
+	font-size: 2.4rem;
+	font-weight: 600;
 	gap: 1rem;
 
 	transition: all 0.2s ease-in-out;
@@ -128,13 +133,6 @@ footer {
 	&:hover {
 		scale: 1.03;
 	}
-}
-
-.contentRight ul li a {
-	text-decoration: none;
-	color: var(--blue-00);
-	font-size: 2.4rem;
-	font-weight: 600;
 }
 
 .contentRight ul li img {
