@@ -3,7 +3,6 @@
 	/*   
 	*/
 
-	.contentRight ul li
 	/* Home */
 	#home {
 		height: 100vh;
@@ -225,7 +224,7 @@
 	}
 
 	.menuSection.on .navBarOptions a {
-		font-size: 3rem;
+		font-size: 2rem;
 		line-height: 10rem;
 		display: block;
 		z-index: 100;
