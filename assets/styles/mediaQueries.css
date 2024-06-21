@@ -110,34 +110,6 @@
 	.clientsLogos {
 		width: 90%;
 	}
-	.contentClient {
-		.contentFeedback {
-			width: 90%;
-			gap: 2rem;
-			.profile {
-				width: 3.5rem;
-			}
-			.ballon {
-				width: 40rem;
-			}
-			.containerFeedback p {
-				font-size: 1.2rem;
-			}
-			.headerFeedback h4 {
-				font-size: 1.6rem;
-			}
-			.stars {
-				height: 1.4rem;
-			}
-			.pointer {
-				width: 7rem;
-				height: 2rem;
-			}
-			.feedback {
-				gap: 0.5rem;
-			}
-		}
-	}
 	.contentSegments {
 		h2 {
 			font-size: 4rem;
@@ -204,17 +176,6 @@
 		justify-content: center;
 		align-items: center;
 	}
-
-	/* .menuSection.on .bgMenu {
-		background-color: rgba(255, 255, 255, 0.596);
-		height: 100vh;
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		filter: blur(5px);
-	} */
 
 	.menuSection.on .navBarOptions {
 		display: block;
@@ -340,18 +301,13 @@
 		.ourClients h2 {
 			font-size: 4rem;
 		}
-		.contentFeedback {
-			.cardInvitation {
-				padding: 2rem;
-			}
-			.cardInvitation p {
-				font-size: 2rem;
-			}
+		.cardInvitation p {
+			font-size: 2rem;
+		}
 
-			.btnCtcFeedback {
-				font-size: 2rem;
-				height: 5rem;
-			}
+		.btnCtcFeedback {
+			font-size: 2rem;
+			height: 5rem;
 		}
 	}
 	.segments {
@@ -451,13 +407,7 @@
 		.client {
 			scale: 0.95;
 		}
-		.contentFeedback {
-			flex-direction: column;
-			align-items: center;
-		}
-		.customerFeedback {
-			width: 100%;
-		}
+
 		.invitationFeedback {
 			width: 90%;
 		}
@@ -671,27 +621,6 @@
 			scale: 1;
 			img {
 				width: 8rem;
-			}
-		}
-	}
-	.contentFeedback {
-		.feedback {
-			.profile {
-				width: 3.2rem;
-			}
-			.containerFeedback {
-				padding: 1rem;
-				p {
-					font-size: 1.2rem;
-				}
-				.headerFeedback {
-					h4 {
-						font-size: 1.4rem;
-					}
-					.stars {
-						height: 1.3rem;
-					}
-				}
 			}
 		}
 	}
