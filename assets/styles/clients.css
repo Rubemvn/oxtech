@@ -85,7 +85,8 @@
 	gap: 5rem;
 	display: flex;
 	width: 80%;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 	padding: 2rem 0;
 }
 
