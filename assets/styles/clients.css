@@ -96,13 +96,14 @@
 	display: flex;
 	justify-content: start;
 	align-items: center;
+	gap: 0.5rem;
 }
 .invitationFeedback h3 {
 	z-index: 2;
 }
 
 .cardInvitation {
-	margin-top: -1rem;
+	/* margin-top: -1rem; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
